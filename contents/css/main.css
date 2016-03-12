@@ -416,7 +416,7 @@ code.lang-markdown .bullet {
 /* media queries */
 
 @media (min-width: 1600px) {
-  body { font-size: 26px; }
+  body { font-size: 21px; }
 }
 
 @media (max-width: 900px) {
