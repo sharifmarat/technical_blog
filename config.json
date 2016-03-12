@@ -1,0 +1,31 @@
+{
+  "locals": {
+    "url": "http://www.ifnull.org",
+    "name": "Marat Sharifullin",
+    "owner": "Marat Sharifullin",
+    "description": "Sandbox",
+    "nav" : [
+      { "name": "Home", "url": "/" },
+      { "name": "Projects", "url": "#" }
+    ]
+  },
+  "plugins": [
+    "./plugins/paginator.coffee",
+    "wintersmith-tag"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 5
+  }
+}
