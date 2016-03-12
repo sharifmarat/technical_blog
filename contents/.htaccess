@@ -1,5 +1,8 @@
 <IfModule mod_rewrite.c>
   RewriteEngine on
+
+  # rewrite rules are added for backward compatibility
   RewriteRule ^router_full_access.*$ /articles/router_full_access [R=301,L]
   RewriteRule ^setting_up_raspberry_pi.*$ /articles/setting_up_raspberry_pi [R=301,L]
+  RewriteRule ^taxonomy.*$ /articles/router_full_access [R=301,L]
 </IfModule>
