@@ -92,9 +92,9 @@ On the hosting machine I have created a separate user to update website content.
 adduser --disabled-login website
 ```
 
-Setup passwordless access to git repository and clone website:
+Get website by clonning git repository:
 ``` shell
-git clone <remote_path> <site_local_path>
+git clone https://git_remote_path <site_local_path>
 ```
 
 Generate static content:
