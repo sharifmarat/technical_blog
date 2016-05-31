@@ -81,6 +81,135 @@ hr {
   margin: 1.6em 0;
 }
 
+/* icons */
+.icon,
+.icon::before,
+.icon::after {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.icon {
+  color: transparent;
+}
+.icon.warning {
+  display: inline-block;
+  top: 0.225em;
+  width: 1.15em;
+  height: 1.15em;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  border-radius: 0.625em;
+}
+.icon.warning::before {
+  content: "";
+  display: block;
+  top: -0.08em;
+  left: 0.0em;
+  position: absolute;
+  border: transparent 0.6em solid;
+  border-bottom-color: #fd3;
+  border-bottom-width: 1em;
+  border-top-width: 0;
+  box-shadow: #999 0 1px 1px;
+}
+.icon.warning::after {
+  display: block;
+  position: absolute;
+  top: 0.2em;
+  left: 0;
+  width: 100%;
+  padding: 0 0px;
+  text-align: center;
+  content: "!";
+  font-size: 0.65em;
+  font-weight: bold;
+  color: #333;
+}
+.icon.info,
+.icon.success,
+.icon.error {
+  display: inline-block;
+  top: 0.15em;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: #999 0 1px 1px;
+}
+.icon.info::after,
+.icon.success::after,
+.icon.error::after {
+  display: block;
+  position: absolute;
+  top: 0em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.65em;
+  color: white;
+}
+.icon.info {
+  background-color: #33c;
+}
+.icon.info::after {
+  font-style: italic;
+  font-weight: bold;
+  content: "i";
+}
+.icon.success {
+  background-color: #393;
+}
+.icon.success::after {
+  left: 0.012em;
+  content: "\2713";
+}
+.icon.error {
+  background-color: #933;
+}
+.icon.error::after {
+  content: "\2715";
+  font-weight: bold;
+}
+
+/* alert box */
+.alert {
+  padding: 20px;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+  color: #D8000C;
+  background-color: #FFBABA;
+}
+.alert.success {
+  color: #4F8A10;
+  background-color: #DFF2BF;
+}
+.alert.info {
+  color: #00529B;
+  background-color: #BDE5F8;
+}
+.alert.warning {
+  color: #9F6000;
+  background-color: #FEEFB3;
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closebtn:hover {
+  color: black;
+}
+
 /* page header */
 
 .header {
