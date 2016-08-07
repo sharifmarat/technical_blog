@@ -1,7 +1,7 @@
 ---
 title: Getting admin access for Comtrend VI-3223u router
 author: marat
-date: 2015-03-02
+date: 2016-03-02
 template: article.jade
 comments: true
 ---

@@ -1,7 +1,7 @@
 ---
 title: Setting up Raspberry Pi 3
 author: marat
-date: 2015-03-07
+date: 2016-03-07
 template: article.jade
 comments: true
 ---

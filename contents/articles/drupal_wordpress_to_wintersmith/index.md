@@ -1,7 +1,7 @@
 ---
 title: Switching from Drupal and Wordpress to Wintersmith
 author: marat
-date: 2015-03-13
+date: 2016-03-13
 template: article.jade
 comments: true
 ---
