@@ -19,7 +19,7 @@ Apparently there is a special field of psychology to study it:
 This term was brought by researcher Edward Hall who studied use of our spaces and how various
 differences in that use can make us feel more relaxed or anxious. 
 
-One of the way to eperience such differences for me is to play volleyball with people from different countries.
+One of the way to experience such differences for me is to play volleyball with people from different countries.
 After a volleyball training everyone goes to shower. It clearly demonstrates sizes... of your
 personal and intimate spaces.
 You might also go to another city for a competition. Imagine 10-12 men spending lots of time together,
