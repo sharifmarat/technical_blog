@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Svg viewer</title>
+		<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui.min.css">
+		<style>
+      #body_container
+      {
+        padding: 15px;
+      }
+
+      #slider_container
+      {
+        width: 50%;
+        margin: 10px;
+      }
+
+      #svg_container
+      {
+        width: 1000px;
+        height: 1000px;
+      }
+
+      #start_pause
+      {
+        margin: 10px;
+        width: 100px;
+      }
+
+      #stop
+      {
+        margin: 10px;
+      }
+
+      #select_svg_files
+      {
+        margin: 10px;
+      }
+
+      #drop_zone
+      {
+        width: 50%;
+        margin: 10px;
+        border: 2px dashed #BBB;
+        border-radius: 5px;
+        padding: 25px;
+        text-align: center;
+        color: #BBB;
+      }
+
+      #svg_filename
+      {
+        margin: 10px;
+      }
+
+      #files_info
+      {
+        margin: 10px;
+      }
+		</style>
+	</head>
+	<body>
+    <div id="body_container">
+
+      <div id="drop_zone">Drop one or multiple svg files</div>
+
+      <form id="select_svg_files" method="post" enctype="multipart/form-data">
+        Or select them here: 
+        <input id="svg_files" type="file" name="svg_files[]" multiple accept=".svg" autocomplete="off">
+      </form>
+
+      <div id="files_info"></div>
+
+      <button id="start_pause" onclick="start_pause()">Start</button> 
+      <button id="stop" onclick="stop()">Stop</button> 
+
+      <div id="slider_container">
+        <div id="slider"></div>
+      </div>
+
+      <div id="svg_filename"></div>
+
+      <div id="svg_container"></div>
+
+    </div>
+
+  <script type="text/javascript">
+
+// global variables
+var reader = new FileReader(); //file reader
+files = [];  //list of files to display
+currentFileIndex = 0;  //current file
+isRunning = false;  // flag indicating whether animation is running
+isLoading = false;  // flag indicating whether the file is being loaded
+
+// add listener if new files were loaded
+document.getElementById('svg_files').addEventListener('change', update_files, false);
+
+// add events if new files were dropped to the drop zone
+var dropZone = document.getElementById('drop_zone');
+dropZone.addEventListener('dragover', drag_over, false);
+dropZone.addEventListener('drop', update_files, false);
+
+// drag over the drop zone
+function drag_over(evt)
+{
+  evt.stopPropagation();
+  evt.preventDefault();
+  evt.dataTransfer.dropEffect = 'copy';
+}
+
+// initialize the slider
+$(function() {
+  $("#slider").slider({
+    min: 0,
+    max: 0,
+    step: 1,
+    change: function(event, ui) {
+      // check if event was triggerd by the user
+      if (event.originalEvent && ui.value < files.length) {
+        pause();
+        currentFileIndex = ui.value;
+        load_file(ui.value);
+      }
+    }
+  });
+});
+
+// initialize buttongs
+$(function() {
+  $( "button" )
+    .button()
+    .click(function( event ) {
+      event.preventDefault();
+    });
+});
+
+// load file at index. It also updates slider and file name.
+function load_file(index)
+{
+  if (index >= files.length)
+  {
+    return;
+  }
+
+  svgFile = files[index];
+  svgFilename = svgFile.name;
+
+  reader.onloadstart = function()
+  {
+    isLoading = true;
+  };
+
+  reader.onload = (function(theFile)
+  {
+    return function(e)
+    {
+      var file = theFile;
+      $("#svg_container").load(e.target.result, function(response, status, xhr) { });
+      $("#svg_filename").text(file.name);
+      $("#slider").slider("option", "value", index);
+      isLoading = false;
+    };
+  })(svgFile);
+
+  reader.readAsDataURL(svgFile);
+}
+
+// resets all elements to its initial state.
+function reset()
+{
+  files = [];
+  isRunning = false;
+  isLoading = false;
+  currentFileIndex = 0;
+  $("#slider").slider("option", "value", 0);
+  $("#slider").slider("option", "max", 0);
+  $("#start_pause").button('option', 'label', 'Start');
+  $("#svg_filename").text('');
+  $("#files_info").text('');
+}
+
+// pauses the simulation.
+function pause()
+{
+  $("#start_pause").button('option', 'label', 'Resume');
+  isRunning = false;
+}
+
+// Unpauses the simulation.
+function unpause()
+{
+  $("#start_pause").button('option', 'label', 'Pause');
+  isRunning = true;
+}
+
+// Pauses or unpauses depending on isRunning flag.
+function start_pause()
+{
+  if (isRunning)
+  {
+    pause();
+  }
+  else
+  {
+    unpause();
+  }
+}
+
+// Completely stops the simulation.
+function stop()
+{
+  $("#start_pause").button('option', 'label', 'Start');
+  isRunning = false;
+  currentFileIndex = 0;
+}
+
+// Updates the list of files.
+function update_files(evt)
+{
+  reset();
+  if (evt.dataTransfer)
+  {
+    evt.stopPropagation();
+    evt.preventDefault();
+    files = evt.dataTransfer.files
+  }
+  else
+  {
+    files = evt.target.files;
+  }
+  if (!files)
+  {
+    alert('Sorry, your browser does not support files property.');
+    return;
+  }
+
+  // check svg extensions.
+  for (var i = 0; i < files.length; i++) {
+    var extension = files[i].name.split('.').pop();
+    if (extension != "svg")
+    {
+      alert(files[i].name + ' is not an svg file');
+      reset();
+      return;
+    }
+  }
+
+  $("#files_info").text('Selected ' + files.length + ' svg files');
+  $("#slider").slider("option", "max", files.length - 1);
+  $("#slider").slider("option", "value", 0);
+}
+
+// Loads files one after another from the list of loaded files. 
+window.onload = function()
+{
+  setInterval(function() {
+    if (isRunning && !isLoading)
+    {
+      if (currentFileIndex >= files.length)
+      {
+        stop();
+      }
+      else
+      {
+        load_file(currentFileIndex);
+        currentFileIndex++;
+      }
+    }
+  }
+  , 400
+  );
+}
+
+  </script>
+
+	</body>
+</html>
+

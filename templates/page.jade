@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  article.article
+    section.content!= typogr(page.html).typogrify()
+
+block prepend footer
+  include disqus
+
+  if page.metadata.comments
+    mixin disqus()

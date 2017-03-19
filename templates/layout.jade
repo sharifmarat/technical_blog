@@ -20,7 +20,10 @@ html(lang='en')
           div.logo
             h1
               a(href=locals.url)= locals.name
-            p.description= locals.description
+            if page && page.metadata.title
+              p.description= page.metadata.title
+            else
+              p.description= locals.description
 
     //!{JSON.stringify(locals.nav)}
 

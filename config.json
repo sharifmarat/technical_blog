@@ -5,8 +5,10 @@
     "owner": "Marat Sharifullin",
     "description": "Sandbox",
     "nav" : [
-      { "name": "Home", "url": "/" },
-      { "name": "Projects", "url": "#" }
+      { "name": "Blog", "url": "/" },
+      { "name": "Projects", "url": "/projects" },
+      { "name": "Archive", "url": "/archive" },
+      { "name": "RSS feed", "url": "/feed.xml" }
     ]
   },
   "plugins": [
