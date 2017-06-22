@@ -37,3 +37,22 @@ In about 15 minutes received email:
 
 What does it even mean? Does this email indicate an error and should I resubmit this IP again?
 It's been already for 30 minutes and still no new information. Microsoft, what a great way to deal with emails!
+
+**Update**
+Quite soon after submitting this post received another email from Microsoft:
+> We have completed reviewing the IP(s) you submitted. The following table contains the results of our investigation.
+>
+> **Conditionally mitigated**
+>
+> Our investigation has determined that the above IP(s) qualify for conditional mitigation. **These IP(s) have been unblocked, but may be subject to low daily email limits until they have established a good reputation.**
+> 
+> **Please note that mitigating this issue does not guarantee that your email will be delivered to a user's inbox.**
+> 
+> Ongoing complaints from users will result in removal of the mitigation.
+> 
+> Mitigation may take 24 - 48 hours to replicate completely throughout our system.
+> 
+> If you feel your issue is not yet resolved, please reply to this email and one of our support team members will contact you for further investigation.
+
+Thanks, but really? Why was this IP blocked by default in the first place? And conditionally mitigated?
+
