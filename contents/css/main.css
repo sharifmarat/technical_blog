@@ -513,7 +513,11 @@ code.lang-markdown .bullet {
 .nav ul li {
   list-style-type: none;
   display: inline-block;
-  margin-left: .5rem
+  margin-left: .5rem;
+}
+.nav a {
+  background-color: #f4f4f4;
+  border-color: #f4f4f4;
 }
 .nav a.active {
   color: #fcfcfc;

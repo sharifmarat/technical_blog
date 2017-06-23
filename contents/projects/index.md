@@ -6,12 +6,12 @@ template: page.jade
 comments: false
 ---
 
-# Animated svg viewer
+### Animated svg viewer
 Simple [svg viewer](/projects/svgviewer/) which can load multiple svgs and animate them one after another
 
 ---
 
-# C-bindings generator from Fortran
+### C-bindings generator from Fortran
 It was written to automate generation of C bindings for Fortran,
 source code can be found [here](https://github.com/sharifmarat/fortran_to_c_headers).
 
