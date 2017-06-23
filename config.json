@@ -8,6 +8,7 @@
       { "name": "Blog", "url": "/" },
       { "name": "Projects", "url": "/projects" },
       { "name": "Archive", "url": "/archive" },
+      { "name": "Contact", "url": "/contact" },
       { "name": "RSS feed", "url": "/feed.xml" }
     ]
   },
@@ -27,6 +28,6 @@
     "smartypants": true
   },
   "paginator": {
-    "perPage": 5
+    "perPage": 10
   }
 }
