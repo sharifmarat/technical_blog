@@ -65,5 +65,4 @@ function updateInfo() {
   </tbody>
 </table><br>
 
-To decode contact info type the result of expression `106 + 7 × 4` here: <input id="key" type="text" name="fname" maxlength="16" size="16" onkeyup="updateInfo()">
-
+To decode info type the result of expression `106 + 7 × 4` here: <input id="key" type="text" name="fname" maxlength="16" size="16" onkeyup="updateInfo();"><input type="submit" onclick="updateInfo();" style="background:blue;color:white;width:40px;" value="⏎">
