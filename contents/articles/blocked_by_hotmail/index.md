@@ -8,7 +8,7 @@ comments: true
 
 Today I discovered that Hotmail/Outlook (live.com) does not want to receive my emails.
 Outgoing email bounced with error: 
-**host mx1.hotmail.com[65.55.92.168] said: 550 SC-001 (SNT004-MC3F4) Unfortunately, messages from 163.172.218.53 weren't sent**
+*host mx1.hotmail.com[65.55.92.168] said: 550 SC-001 (SNT004-MC3F4) Unfortunately, messages from 163.172.218.53 weren't sent*.
 
 <span class="more"></span>
 
