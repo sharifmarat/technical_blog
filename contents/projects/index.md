@@ -6,6 +6,14 @@ template: page.jade
 comments: false
 ---
 
+### Percolation simulation
+[Simulation of percolation theory](/projects/percolation/) to find if there is a path
+connecting left side of the grid to the right side via open pixels and to estimate
+percolation threshold.
+<img src="/projects/percolation_example.png" alt="Drawing" style="width: 300px; display: block; margin: 0 auto;" />
+
+---
+
 ### Animated svg viewer
 Simple [svg viewer](/projects/svgviewer/) which can load multiple svgs and animate them one after another
 
