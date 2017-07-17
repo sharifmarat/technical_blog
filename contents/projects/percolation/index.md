@@ -6,7 +6,7 @@ comments: true
 ---
 
 Imagine the grid where every pixel is open with some probability *p*.
-What is the probability to get from left side of the grid to right via open pixels (long-range connectivity)?
+What is the probability to get from left side of the grid to right via open pixels (site percolation)?
 
 <canvas id="canvas" width="400" height="400" style="background: #eee; display: block; margin: 0 auto; "></canvas>
 
