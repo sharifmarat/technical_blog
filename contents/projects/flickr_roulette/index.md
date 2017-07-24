@@ -9,12 +9,12 @@ comments: true
 
 <div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" id="pic" style="width:100%;"/></div><br/>
 
-<label id="source"></label>
+<label id="source" style="word-wrap: break-word;"></label>
 
 <script>
 function jsonFlickrApi(obj) {
   var p = obj.photos.photo[Math.floor(Math.random() * obj.photos.total)];
-  var raw_url = "http://farm" + p.farm + ".static.flickr.com/" + p.server + "/"+ p.id + "_" + p.secret + "_b.jpg";
+  var raw_url = "https://farm" + p.farm + ".static.flickr.com/" + p.server + "/"+ p.id + "_" + p.secret + "_b.jpg";
   var flickr_url = "https://www.flickr.com/photos/" + p.owner + "/" + p.id;
   document.getElementById("pic").src = raw_url;
   document.getElementById("source").innerText = "Check the license " + flickr_url + " before using this photo";
