@@ -6,6 +6,13 @@ template: page.jade
 comments: false
 ---
 
+### Flick roulette
+See a random (not completely random) photo on the [Flick roulette](/projects/flickr_roulette/).
+
+[For more details](/articles/flickr_roulette/).
+
+---
+
 ### Site percolation
 [Simulation of percolation theory](/projects/percolation/) to find if there is a path
 connecting left side of the grid to the right side via open pixels and to estimate
@@ -13,7 +20,7 @@ percolation threshold (site percolation).
 
 <img src="/projects/percolation_example.png" alt="Drawing" style="width: 300px; display: block; margin: 0 auto;" />
 
-For more details read [here](/articles/percolation/).
+[For more details](/articles/percolation/).
 
 ---
 
