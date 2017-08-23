@@ -5,4 +5,4 @@ if [ "$#" -ne 1 ]; then
   exit 1
 fi
 
-wget "https://api.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key=$1&per_page=500&format=json" -O photos.js
+wget -q "https://api.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key=$1&per_page=500&format=json" -O photos.js

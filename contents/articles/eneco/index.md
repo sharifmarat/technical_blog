@@ -53,3 +53,5 @@ checking my boiler (but I don't remember for sure). But even if he did than it j
 
 I am going to keep fighting this issue. But based on my experience I don't expect anything good coming from this.
 I would recommend to stay away from Eneco and their incompetent workers.
+
+**Update:** I've got a call from Eneco and they proposed to drop half of the bill. Better than nothing, but less than I hoped.
