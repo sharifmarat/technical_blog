@@ -95,13 +95,10 @@ Let's modify config file and try to update router settings:
 </X_BROADCOM_COM_LoginCfg>
 ```
 
-<div class="alert warning">
-  <span class="icon warning"></span>
-  **hybrid-cloudblog** pointed that it did not work with new firmware.
-  The following workaround might help:
-  `<AdminPassword notification="2">c29tZXBhc3N3b3JkaGVyZQo=</AdminPassword>`
-  as he describes it [here](http://www.hybrid-cloudblog.com/get-admin-acces-tele2-3223u-adsl-modem/).
-</div>
+> **hybrid-cloudblog** pointed that it did not work with new firmware.
+> The following workaround might help:
+> `<AdminPassword notification="2">c29tZXBhc3N3b3JkaGVyZQo=</AdminPassword>`
+> as he describes it [here](http://www.hybrid-cloudblog.com/get-admin-acces-tele2-3223u-adsl-modem/).
 
 For simplicity I used the same password as **user**'s password for **admin** and **support** accounts.
 Go to **http://192.168.1.1/updatesettings.html** and update router setting using modified config file.
