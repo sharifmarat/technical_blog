@@ -1,0 +1,28 @@
+theme = "minos"
+baseURL = "https://ifnull.org/"
+languageCode = "en-us"
+title = "Marat Sharifullin"
+
+[params]
+    disqusShortname = "ifnull"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = -100
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/all/"
+    weight = -80
+
+  [[menu.main]]
+    name = "Archive"
+    url = "/archive/"
+    weight = -60
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = -40
