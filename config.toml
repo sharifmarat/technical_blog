@@ -4,7 +4,7 @@ languageCode = "en-us"
 title = "Marat Sharifullin"
 
 [params]
-    disqusShortname = "ifnull"
+  DisqusShortname = "ifnull"
 
 [menu]
   [[menu.main]]
