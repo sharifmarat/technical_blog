@@ -5,7 +5,7 @@ Comments: true
 Type: "post"
 ---
 
-In previous article [Closing laptop lid does not lock screen on Void Linux](articles/void_lock_screen_on_suspend/) I
+In previous article [Closing laptop lid does not lock screen on Void Linux](/articles/void_lock_screen_on_suspend/) I
 showed how to lock the screen when closing a laptop lid on Void Linux. It required to know a user under which the
 `mate-session` was started. Default ACPI script in Void Linux does not detect correct user.
 
