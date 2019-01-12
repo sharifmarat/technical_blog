@@ -167,6 +167,13 @@ In daily life when Nvidia is not used you should see something similar to
 0000:01:00.0 OFF
 ```
 
+You might need to blacklist nouveau module to avoid conflicts with Nvidia module.
+For that create a file `/etc/modprobe.d/blacklist-nouveau.conf`
+
+```
+install nouveau /bin/false
+```
+
 You could also blacklist Nvidia kernel modules by default.
 
 As far as I remember I had to manually remove `/opt/lib/xorg/modules/libwfb.so` library.
