@@ -168,3 +168,5 @@ In daily life when Nvidia is not used you should see something similar to
 ```
 
 You could also blacklist Nvidia kernel modules by default.
+
+As far as I remember I had to manually remove `/opt/lib/xorg/modules/libwfb.so` library.
