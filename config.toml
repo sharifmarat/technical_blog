@@ -23,6 +23,11 @@ title = "Marat Sharifullin"
     weight = -60
 
   [[menu.main]]
+    name = "Mabsurdation"
+    url = "/mabsurdation/"
+    weight = -50
+
+  [[menu.main]]
     name = "Contact"
     url = "/contact/"
     weight = -40
