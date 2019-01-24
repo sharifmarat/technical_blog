@@ -3,15 +3,26 @@
 <div id="container">
     {{ partial "header.html" . }}
     <section id="main" class="outer">
+        <div class="article-entry" itemprop="articleBody">
+            {{ .Content }}
+        </div>
         <section class="archives-wrap">
             <div class="archive-category-wrap">
                 <span class="archive-category">{{ .Title }}</span>
             </div>
             <div class="archives">
-                {{ range where .Site.Pages "Type" "post" }}
-                    {{ partial "li.html" . }}
+                {{ if (.Params.filter) }}
+                    {{ range where .Site.Pages "Type" .Params.filter }}
+                        {{ partial "li.html" . }}
+                    {{ end }}
+                {{ else }}
+                    {{ range where .Site.Pages "Type" "post" }}
+                        {{ partial "li.html" . }}
+                    {{ end }}
                 {{ end }}
-        </div></section>
+
+            </div>
+        </section>
     </section>
     {{ partial "footer.html" . }}
 </div>
