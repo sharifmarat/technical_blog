@@ -13,7 +13,7 @@ of this technology on Linux.
 
 <!--more-->
 
-It is well describe on [wiki.voidlinux.eu](wiki.voidlinux.eu) how to setup either Nvidia or Intel graphics card on Void Linux.
+It is well describe on [wiki.voidlinux.eu](https://wiki.voidlinux.eu/) how to setup either Nvidia or Intel graphics card on Void Linux.
 The issue comes when you try to install OpenGL libraries for both Nvidia and Intel graphics. It does not work, because
 these libraries conflict with each other. It is possible to upgrade from mesa `libGL` to `libGL` from Nvidia,
 but not in another direction.  If you already installed OpenGL libraries for Nvidia, you have to remove them first (including
@@ -48,7 +48,7 @@ If you try to install `Bumblebee` (for Optimus) with Nvidia drivers and librarie
 default graphics without an option to switch back to Intel integrated graphics.
 
 3.Install Nvidia kernel module only (without Nvidia libraries). Download Nvidia libraries manually.
-You could do it either from official website [https://www.nvidia.com/Download/index.aspx?lang=en-us](Nvidia libraries) or from Void Linux repository.
+You could do it either from official website [Nvidia libraries](https://www.nvidia.com/Download/index.aspx?lang=en-us) or from Void Linux repository.
 
 4.Extract Nvidia libraries into a separate folder.
 I have used the blob from Nvidia website with the following parameters:
@@ -67,7 +67,7 @@ I had to play with `--no-opengl-files` parameters in order not to overwrite syst
 
 6.Install `bbswitch` kernel module to enable/disable discrete graphics.
 
-7.Clone [https://github.com/Witko/nvidia-xrun](nvidia-xrun) script. It starts a separate X session with Nvidia graphics enabled.
+7.Clone [nvidia-xrun](https://github.com/Witko/nvidia-xrun) script. It starts a separate X session with Nvidia graphics enabled.
 
 8.Create file `/etc/X11/nvidia-xorg.conf`
 
