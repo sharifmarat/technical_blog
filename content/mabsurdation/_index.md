@@ -1,7 +1,6 @@
 ---
-title: Mabsurdation
+title: Project Mabsurdation
 filter: "absurd"
 ---
 
-Short stories in Russian  
-Короткие истории на русском
+
