@@ -1,5 +1,5 @@
 ---
-title: Project Mabsurdation
+title: Aart project Mabsurdation
 filter: "absurd"
 ---
 
