@@ -36,3 +36,10 @@ qemu-system-x86_64 -snapshot -vnc 0.0.0.0:0 -m 5G -enable-kvm -hda /dev/sda
 With this running you can use `Remmina` with VNC protocol to connect to the machine and debug boot-issues:
 
 ![Grub in QEMU](grub.png)
+
+
+To test issues of bootloader with raid just add another drive:
+
+```shell
+qemu-system-x86_64 -snapshot -vnc 0.0.0.0:0 -m 5G -enable-kvm -hda /dev/sda -hdb /deb/sdb
+```
