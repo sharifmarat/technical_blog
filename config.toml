@@ -28,6 +28,11 @@ title = "Marat Sharifullin"
     weight = -50
 
   [[menu.main]]
+    name = "Gallery"
+    url = "/gallery/public/"
+    weight = -45
+
+  [[menu.main]]
     name = "Contact"
     url = "/contact/"
     weight = -40
