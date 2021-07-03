@@ -1,0 +1,111 @@
+<article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        {{ if .Title }}
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">{{ .Title }}</h1>
+        </header>
+        {{ end }}
+        <div class="article-meta">
+	    {{ if .Params.Date }}
+                <a href="{{ .RelPermalink }}" class="article-date">
+                    <time datetime='{{ .Date.Format "2006-01-02T15:04:05.000-07:00" }}' itemprop="datePublished">{{ .Date.Format "2006-01-02" }}</time>
+                </a>
+	    {{ end }}
+            {{ $Site := .Site }}
+        </div>
+
+        <div class="article-entry" itemprop="articleBody">
+
+<link rel="stylesheet" href="/css/nanogallery2.min.css">
+<script src="/js/jquery-3.6.0.min.js"></script>
+<script src="/js/jquery.nanogallery2.min.js"></script>
+<div class="container">
+
+<div class="content">
+
+<div class="my_nanogallery2" data-nanogallery2='{
+          "galleryMosaic" : [
+            { "w": 2, "h": 2, "c": 1, "r": 1 },
+            { "w": 1, "h": 1, "c": 3, "r": 1 },
+            { "w": 1, "h": 1, "c": 3, "r": 2 },
+            { "w": 1, "h": 2, "c": 4, "r": 1 },
+            { "w": 2, "h": 1, "c": 5, "r": 1 },
+            { "w": 2, "h": 2, "c": 5, "r": 2 },
+            { "w": 1, "h": 1, "c": 4, "r": 3 },
+            { "w": 2, "h": 1, "c": 2, "r": 3 },
+            { "w": 1, "h": 2, "c": 1, "r": 3 },
+            { "w": 1, "h": 1, "c": 2, "r": 4 },
+            { "w": 2, "h": 1, "c": 3, "r": 4 },
+            { "w": 1, "h": 1, "c": 5, "r": 4 },
+            { "w": 1, "h": 1, "c": 6, "r": 4 }
+          ],
+          "galleryMosaicXS" : [
+            { "w": 2, "h": 2, "c": 1, "r": 1 },
+            { "w": 1, "h": 1, "c": 3, "r": 1 },
+            { "w": 1, "h": 1, "c": 3, "r": 2 },
+            { "w": 1, "h": 2, "c": 1, "r": 3 },
+            { "w": 2, "h": 1, "c": 2, "r": 3 },
+            { "w": 1, "h": 1, "c": 2, "r": 4 },
+            { "w": 1, "h": 1, "c": 3, "r": 4 }
+          ],
+          "galleryMosaicSM" : [
+            { "w": 2, "h": 2, "c": 1, "r": 1 },
+            { "w": 1, "h": 1, "c": 3, "r": 1 },
+            { "w": 1, "h": 1, "c": 3, "r": 2 },
+            { "w": 1, "h": 2, "c": 1, "r": 3 },
+            { "w": 2, "h": 1, "c": 2, "r": 3 },
+            { "w": 1, "h": 1, "c": 2, "r": 4 },
+            { "w": 1, "h": 1, "c": 3, "r": 4 }
+          ],
+          "galleryDisplayMode": "fullContent",
+          "gallerySorting": "random",
+          "thumbnailDisplayOrder": "random",
+
+          "thumbnailHeight": "180",
+          "thumbnailWidth": "220",
+          "thumbnailAlignment": "scaled",
+          "thumbnailGutterWidth": 0,
+          "thumbnailGutterHeight": 0,
+          "thumbnailBorderHorizontal": 2,
+          "thumbnailBorderVertical": 2,
+
+          "thumbnailToolbarImage": null,
+          "thumbnailToolbarAlbum": null,
+          "thumbnailLabel": { "display": false },
+
+          "galleryDisplayTransitionDuration": 1500,
+          "thumbnailDisplayTransition": "imageSlideUp",
+          "thumbnailDisplayTransitionDuration": 1200,
+          "thumbnailDisplayTransitionEasing": "easeInOutQuint",
+          "thumbnailDisplayInterval": 60,
+
+          "thumbnailBuildInit2": "image_scale_1.15",
+          "thumbnailHoverEffect2": "thumbnail_scale_1.00_1.05_300|image_scale_1.15_1.00",
+          "touchAnimation": true,
+          "touchAutoOpenDelay": 500,
+
+          "viewerToolbar": { "display": false },
+          "viewerTools":    {
+            "topLeft":   "label",
+            "topRight":  "downloadButton, rotateLeft, rotateRight, fullscreenButton, closeButton"
+          },
+
+          "galleryTheme" : {
+            "thumbnail": { "background": "#111" }
+          },
+
+          "locationHash": true}' >
+
+            {{ .Content }}
+
+
+</div>
+
+<footer>
+<p><a href="https://github.com/sharifmarat/nextcloud-gallery">NextCloud Gallery Generator</a> </p>
+</footer>
+</div>
+        </div>
+
+    </div>
+</article>
