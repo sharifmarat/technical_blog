@@ -1,6 +1,7 @@
 ---
 title: Contact
 ---
+
 <script>
 
 var lower_bound = 32; //including
@@ -57,7 +58,7 @@ function updateInfo(event) {
 
 <table align="center">
   <tbody>
-    <tr><td>Email</td><td><label id="email">`VhTi6\\[dhab!dhZ</label></td></tr>
+    <tr><td>Email</td><td><label id="email">`VhTi6\[dhab!dhZ</label></td></tr>
     <tr><td>Map-code</td><td><label id="mapcode">AA:q(/!;C@</label></td></tr>
     <tr><td>What3Words</td><td><label id="w3w">cd[g#icZ[V]$g]_a&#96;[e</label></td></tr>
   </tbody>

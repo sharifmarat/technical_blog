@@ -1,5 +1,4 @@
-{{ $paginator := .Paginate (where .Pages "Type" "post") }}
-{{ $pag := $paginator }}
+{{ $pag := .Paginator }}
 {{ if gt $pag.TotalPages 1 }}
 <nav id="page-nav">
     {{ if $pag.HasPrev }}

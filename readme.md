@@ -1,8 +1,11 @@
 A blog on static site generator.
 
-See deployed on <https://ifnull.org>.
+Deployed on <https://ifnull.org>.
 
 ## Testing it locally
+
+Tested on Hugo v0.90.
+
 ```
 hugo server -D
 ```

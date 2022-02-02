@@ -3,6 +3,11 @@ baseURL = "https://ifnull.org/"
 languageCode = "en-us"
 title = "Marat Sharifullin"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
   DisqusShortname = "ifnull"
 
