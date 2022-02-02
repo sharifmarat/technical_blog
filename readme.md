@@ -1,6 +1,6 @@
 A blog on static site generator.
 
-Deployed on <https://ifnull.org>.
+Deployed on [ifnull.org](https://ifnull.org) and on [github pages](http://sharifmarat.github.io/)
 
 ## Testing it locally
 
