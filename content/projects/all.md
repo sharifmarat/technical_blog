@@ -2,7 +2,30 @@
 Title: Projects
 ---
 
-# LongWarn
+## Dockerized email
+
+Managing my own email server with the following setup.
+[Read here](/articles/dockerized_email/) for more details.
+
+Source of the docker image is on [GitHub](https://github.com/sharifmarat/docker-email).
+
+## Web 1.0 version of Wordle/Lingo
+
+Web 1.0 (no react and fancy stuff) clone of wordle/lingo supporting 4 languages: 
+- English
+- Dutch
+- Russian
+- Tatar
+
+[**Play here**](https://ifnull.org/wordnl/?lang=en) or [**here**](https://sharifmarat.github.io/lingo/?lang=en).
+
+Sources are on [GitHub](https://github.com/sharifmarat/lingo).
+
+Auto solver is part of the game:
+- When the field is empty, click 3 times on DEL, followed by 3 clicks on ENTER.
+- Or execute solve() in browser console.
+
+## LongWarn
 A tiny shell script to fail a job and trigger a notification if a cronjob takes longer than desired.
 
 If a job takes longer than expected, for example a backup job usually takes a few seconds, 
@@ -19,18 +42,18 @@ How to install:
 wget https://raw.githubusercontent.com/sharifmarat/longwarn/master/longwarn -O /usr/local/bin/longwarn
 ```
 
-[Github for more details](https://github.com/sharifmarat/longwarn).
+[GitHub for more details](https://github.com/sharifmarat/longwarn).
 
 ---
 
-# Flickr roulette
+## Flickr roulette
 See a random (not completely random) photo on the [Flickr roulette](/projects/flickr_roulette/).
 
 [For more details](/articles/flickr_roulette/).
 
 ---
 
-# Site percolation
+## Site percolation
 [Simulation of percolation theory](/projects/percolation/) to find if there is a path
 connecting left side of the grid to the right side via open pixels and to estimate
 percolation threshold (site percolation).
@@ -41,12 +64,12 @@ percolation threshold (site percolation).
 
 ---
 
-# Animated svg viewer
+## Animated svg viewer
 Simple [svg viewer](/projects/svgviewer/) which can load multiple svgs and animate them one after another
 
 ---
 
-# C-bindings generator from Fortran
+## C-bindings generator from Fortran
 It was written to automate generation of C bindings for Fortran,
 source code can be found [here](https://github.com/sharifmarat/fortran_to_c_headers).
 
