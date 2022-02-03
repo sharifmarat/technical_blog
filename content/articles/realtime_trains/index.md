@@ -15,13 +15,13 @@ Here it is (~20MB):
 Your browser does not support the video tag.
 </video>
 
-# Issues:
+## Issues:
 1. Not all trains follow tracks (it has to do with linear interpolation, see below)
 2. A train never reaches its final stop (not enough data, see below)
 3. These are not true train positions, interpolated between stations
 4. It's getting quite repetitve after some time :)
 
-# How is was done?
+## How is was done?
 1.Got access to NS API
 
 2.Mapped all train stations which includes stations both within the Netherlands and outside.
@@ -76,7 +76,7 @@ done
 
 [Source code can be found here](https://github.com/sharifmarat/trains)
 
-# What's next?
+## What's next?
 It's quickly getting repetitive. The simplest way to make it more entertaining is to get data
 from 3am or 4am. It would be more fun to see build up of train traffic.
 

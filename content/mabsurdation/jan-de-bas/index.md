@@ -8,7 +8,7 @@ Comments: true
 
 <div style="text-align: right"> Перевод стихов Jan de Bas c голландского</div>
 
-# Checkpoint Charlie
+## Checkpoint Charlie
 
 На боку лежала она<br>
 и в кровати вдруг стену<br>
@@ -24,7 +24,7 @@ Comments: true
 повернулась ко мне она:<br>
 падение стены было окончено.
 
-# Спокойной ночи (Welterusten)
+## Спокойной ночи (Welterusten)
 
 Он захлопнул книгу.<br>
 На тумбу ее положил.<br>
@@ -34,7 +34,7 @@ Comments: true
 Романы о любви.<br>
 Он дышит еще 2 предложения.
 
-# Живым отцам (Levende vaders)
+## Живым отцам (Levende vaders)
 
 <div style="text-align: right"> Посвящено Cees de Bas sr. (1924-2014)</div>
 

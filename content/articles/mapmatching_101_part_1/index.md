@@ -11,7 +11,7 @@ Let's write a simple map matching algorithm in Julia.
 
 <!--more-->
 
-# Map matching
+## Map matching
 
 Map matching is the process of estimating actual trajectory traveled by a vehicle/bicycle
 on a road network (map) from certain observations. These observations could be:
@@ -29,7 +29,7 @@ A digital road network (map) does not match real world either.
 Map matching algorithms suppose to account for such
 inaccuracies and estimate actual locations on the road network.
 
-# Julia
+## Julia
 
 It can be done in almost any programming language. But I decided to go with 
 [Julia](https://julialang.org/) as it is a fairly new programming
@@ -38,7 +38,7 @@ Julia's backend is LLVM and it supports Lisp-like macros.
 I think it is worth trying Julia as an alternative to expensive
 and buggy (especially on Linux) MATLAB. 
 
-# Map data
+## Map data
 To map match input observations a digital map data must be available.
 OpenStreetMap can expose all its map data in a single file.
 There are also extracts which contain OpenStreetMap data for individual countries,
@@ -52,17 +52,17 @@ OpenStreetMap mainly uses two of the following formats:
 I'm going to use Amsterdam's extract in OSM XML format. The extract contains data primitives:
 nodes, ways and relations.
 
-## Node
+### Node
 It is represented by identifier, latitude and longitude. It can represent some standalone
 features or shape of continuous ways.
 
-## Way
+### Way
 A way is an ordered list of nodes to represent linear features like rivers, roads, boundaries ("closed way").
 
-## Relation
+### Relation
 A relation represents a relationship between two or more elements.
 
-## Example:
+### Example:
 ``` xml
         <node id="16568166" lat="52.3776574" lon="4.8988379" version="1">
                 <tag k="ref" v="29-V"/>
@@ -98,7 +98,7 @@ A relation represents a relationship between two or more elements.
         </relation>
 ```
 
-# Observations (GNSS)
+## Observations (GNSS)
 OpenStreetMap also provides access to huge
 [database with GNSS traces](https://wiki.openstreetmap.org/wiki/Planet.gpx).
 These traces can be used to test map matching algorithms.
@@ -121,7 +121,7 @@ Example:
       </trkpt>
 ```
 
-# To be continued
+## To be continued
 In the next posts I'm going to write a program which loads map data, plots a GPS trace and
 start with map matching.
 
