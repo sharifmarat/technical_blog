@@ -1,7 +1,7 @@
 theme = "minos"
 baseURL = "https://ifnull.org/"
 languageCode = "en-us"
-title = "M"
+title = "Mr.T"
 
 [markup]
   [markup.goldmark]
