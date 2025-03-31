@@ -57,31 +57,31 @@ The last quick attempt: `wine OnVUE-3.22.30.exe` - does not work. Ok, not worth 
 Since the exam cannot be rescheduled or even cancelled less than 24 hours before the start, I wanted to express my frustration and notify the exam people that I won't be able to join. So I contacted the exam center through the online chat:
 
 ```
-Marat: Hi. I have an Azure exam scheduled for tomorrow.
-       Just found funny statement: "All Linux/Unix based
-       Operating Systems are strictly prohibited."
-       Is this a joke? I though that we were talking about
-       Azure clouds in which a lot of Linux services are running.
-       Microsoft "surpises" again. I don't care about refund
-       as it was a company voucher, but that is just the feedback.
-       Thank you.
-......: Hi. I would be happy to help you with that.
-        There are system requirements decided by the Microsoft.
-......: Therefore, if there is any difference with that please
-        contact Microsoft directly in this concern.
-Marat: I understand that there are reasons :) Anyway, if you can 
-       cancel the exam so that no one will be wasting time
-       waiting for me to join tomorrow, I guess that's the best to do.
-......: I can see that you are scheduled for AZ-900 exam in English
-        via Online (Internet Based Test)
-Marat: yes, but I guess I cannot dail in from Linux
-......: I have checked and the exam can neither be canceled
-        nor rescheduled within 24 hours from the scheduled appointment.
-Marat: I saw that as well, but I just wanted to notify that
-       I won't be able to dial in. If that's fine for you - also fine for me
-......: The exam cannot be rescheduled or cancelled
-......: Is there anything else I can assist you with today?
-Marat: No, thank you
+Mr.T: Hi. I have an Azure exam scheduled for tomorrow.
+      Just found funny statement: "All Linux/Unix based
+      Operating Systems are strictly prohibited."
+      Is this a joke? I though that we were talking about
+      Azure clouds in which a lot of Linux services are running.
+      Microsoft "surpises" again. I don't care about refund
+      as it was a company voucher, but that is just the feedback.
+      Thank you.
+.....: Hi. I would be happy to help you with that.
+       There are system requirements decided by the Microsoft.
+.....: Therefore, if there is any difference with that please
+       contact Microsoft directly in this concern.
+Mr.T: I understand that there are reasons :) Anyway, if you can 
+      cancel the exam so that no one will be wasting time
+      waiting for me to join tomorrow, I guess that's the best to do.
+.....: I can see that you are scheduled for AZ-900 exam in English
+       via Online (Internet Based Test)
+Mr.T: yes, but I guess I cannot dail in from Linux
+.....: I have checked and the exam can neither be canceled
+       nor rescheduled within 24 hours from the scheduled appointment.
+Mr.T: I saw that as well, but I just wanted to notify that
+      I won't be able to dial in. If that's fine for you - also fine for me
+.....: The exam cannot be rescheduled or cancelled
+.....: Is there anything else I can assist you with today?
+Mr.T: No, thank you
 Info: Thank you for contacting Pearson VUE Live Chat. Have a great day!
 ```
 

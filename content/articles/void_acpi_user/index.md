@@ -21,11 +21,11 @@ But it fails, because there are two `dbus-launch` processes on my Void Linux:
 ```
 # ps auxf | grep dbus-launch
 root       981  Dec16   0:00 dbus-launch --autolaunch 47a2e --binary-syntax --close-stderr
-marat     1038  Dec16   0:00 dbus-launch --sh-syntax --exit-with-session
+mrt       1038  Dec16   0:00 dbus-launch --sh-syntax --exit-with-session
 ```
 
 With such snapshot of current processes, `/etc/acpi/handler.sh` would find that `PID=981` and `USER=root`. Later running
-`sudo -u $USER mate-screensaver-command -l` would not lock the screen, because `USER` is not `marat.
+`sudo -u $USER mate-screensaver-command -l` would not lock the screen, because `USER` is not `mrt.
 
 Quick workaround is to update `/etc/acpi/handler.sh` and iterate over all `dbus-lanuch` processes:
 ```
